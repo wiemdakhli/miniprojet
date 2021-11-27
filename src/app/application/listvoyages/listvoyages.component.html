@@ -1,0 +1,17 @@
+<h1>Nos voyages organisés</h1>
+<ul>
+    <div class="ng-container" *ngFor="let v of lesVoyages">
+    <li>
+        <img [src]="v.img">
+        {{v.id}}<br>
+        Destination : {{v.destination}} <br>
+        Date d'aller : {{v.dateAller}}<br>
+        Date de retour : {{v.dateRetour}}<br>
+        Nombre de jours : {{v.nbJ}}<br>
+        Prix par personne : {{v.prix}}<br>
+        le voyage est {{v.enPromo}} <br>
+        Description : {{v.description}}
+                
+    </li>
+    </div>
+</ul>
